@@ -1,0 +1,248 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-size-36 {
+  font-size: 36px
+}
+
+.text-size-30 {
+  font-size: 30px;
+}
+
+.text-size-24 {
+  font-size: 24px;
+}
+
+.text-size-18 {
+  font-size: 18px
+}
+
+.text-weight {
+  font-weight: bold;
+}
+
+.info-bg-color {
+  background: #4E4E4E;
+}
+
+.text-color {
+  color: #FFFFFF;
+}
+
+.innovators-bg-color {
+  background: #F1F1F1;
+}
+
+.products-bg-color {
+  background: #405D78;
+}
+
+.box-bg-color {
+  background: #F1F1F1;
+}
+
+.circle-color {
+  background: #E07A64;
+}
+
+.navigation-container,
+.header-container,
+.innovators-container,
+.products-container,
+.footer-container {
+  width : 960px;
+  margin: 0 auto;
+}
+
+.nav,
+.footer {
+  display    : flex;
+  align-items: center;
+  height     : 50px;
+}
+
+.navigation-container,
+.footer-container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.links-list {
+  align-items: center;
+  width      : 28%;
+  height     : 100%;
+}
+
+.links {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.list-item-1,
+.list-item-2,
+.list-item-3 {
+  text-decoration: none;
+}
+
+.list-item-3 {
+  cursor: not-allowed;
+}
+
+.header {
+  height           : calc(100vh - 50px);
+  background-image : url("assets/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size  : cover;
+}
+
+.shadow {
+  display    : flex;
+  align-items: center;
+  height     : 100%;
+  background : rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin-bottom: 3%;
+  line-height  : 41px;
+  width        : 60%;
+}
+
+.subtitle {
+  margin-bottom: 6%;
+  line-height  : 23px;
+  width        : 40%;
+}
+
+.offer-btn {
+  border             : 3px solid #FFFFFF;
+  padding            : 10px 50px;
+  text-decoration    : none;
+  transition-duration: 1s;
+}
+
+.offer-btn:hover {
+  background: #FFFFFF;
+  color     : black;
+}
+
+.innovators {
+  padding: 3% 0%;
+}
+
+.emploees {
+  padding-bottom: 3%;
+  margin: 0 auto;
+}
+
+.emploee-1,
+.emploee-2 {
+  display: flex;
+  margin : 15px 0px;
+}
+
+.name {
+  margin-bottom: 20px;
+}
+
+/* 
+The reason why i leave styling of
+.emploee-1:nth-of-type(odd) class (lines 161-164) 
+is when the emploees amount will become larger 
+and larger, info about every odd emploee 
+will begin with default values for 
+flex-direction as well as text-align properties, 
+which is, respectively - row and left.
+*/
+
+.emploee-1:nth-of-type(odd) {
+  flex-direction: initial;
+  text-align    : initial;
+}
+
+.emploee-2:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align    : right;
+}
+
+.emploee-image {
+  width          : 200px;
+  height         : 200px;
+  border-radius  : 50%;
+  background-size: cover;
+}
+
+.emploee-1:nth-of-type(1) .emploee-image {
+  background-image: url(assets/emploee-image-1.jpg);
+  margin-right    : 40px;
+}
+
+.emploee-2:nth-of-type(2) .emploee-image {
+  background-image: url(assets/emploee-image-2.jpg);
+  margin-left     : 40px;
+}
+
+.text-container {
+  width          : 70%;
+  display        : flex;
+  justify-content: center;
+  flex-direction : column;
+}
+
+.products {
+  background: #405D78;
+}
+
+.offer {
+  color      : #FFFFFF;
+  padding-top: 3%;
+}
+
+.offer-container {
+  display              : grid;
+  grid-template-columns: auto auto auto;
+  gap                  : 60px;
+  justify-content      : center;
+  padding              : 5% 0%;
+}
+
+.circle {
+  position     : absolute;
+  top          : -10px;
+  left         : -10px;
+  width        : 20px;
+  height       : 20px;
+  border-radius: 50%;
+}
+
+.new-offer::after {
+  content    : "\A (nowość!)";
+  white-space: pre-wrap;
+}
+
+.box {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  height         : 200px;
+  width          : 200px;
+  border         : 3px solid black;
+  position       : relative;
+  transition     : 0.5s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.icons-cont {
+  display        : flex;
+  justify-content: space-between;
+  width          : 8%;
+}
