@@ -133,7 +133,7 @@ html {
 }
 
 .innovators {
-  padding: 3% 0%;
+  padding: 40px 0px;
 }
 
 .emploees {
@@ -141,11 +141,14 @@ html {
   margin: 0 auto;
 }
 
-.emploee-1,
+.emploee-1 {
+  display: flex;
+  margin-bottom : 15px;
+}
+
 .emploee-2 {
   display: flex;
-  margin : 15px 0px;
-}
+  margin-top : 15px;
 
 .name {
   margin-bottom: 20px;
@@ -197,11 +200,11 @@ which is, respectively - row and left.
 
 .products {
   background: #405D78;
+  padding   : 40px 0px;
 }
 
 .offer {
   color      : #FFFFFF;
-  padding-top: 3%;
 }
 
 .offer-container {
@@ -209,7 +212,7 @@ which is, respectively - row and left.
   grid-template-columns: auto auto auto;
   gap                  : 60px;
   justify-content      : center;
-  padding              : 5% 0%;
+  padding-top          : 5%;
 }
 
 .circle {
